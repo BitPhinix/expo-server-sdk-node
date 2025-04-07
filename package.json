@@ -1,5 +1,5 @@
 {
-  "name": "expo-server-sdk",
+  "name": "@bitphinix/expo-server-sdk",
   "version": "3.14.0",
   "description": "Server-side library for working with Expo using Node.js",
   "main": "build/ExpoClient.js",
@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
     "lint": "eslint src",
-    "prepare": "yarn build",
+    "prepare": "pnpm build",
     "test": "jest",
     "tsc": "tsc",
     "watch": "tsc --watch"
@@ -47,7 +47,6 @@
   },
   "homepage": "https://github.com/expo/expo-server-sdk-node#readme",
   "dependencies": {
-    "node-fetch": "^2.6.0",
     "promise-limit": "^2.7.0",
     "promise-retry": "^2.0.1"
   },
@@ -63,6 +62,5 @@
     "prettier": "3.5.3",
     "ts-jest": "29.3.0",
     "typescript": "5.8.2"
-  },
-  "packageManager": "yarn@4.7.0"
+  }
 }
